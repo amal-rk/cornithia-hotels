@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Laundry for Gents</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    h1 {
+      text-align: center;
+    }
+    item{
+      height: 5em;
+      margin: 2em;
+    }
+    check{
+      display: block;
+      text-align: center;
+      justify-content: safe center;
+      margin-left: 1em;
+    }
+    subitem{
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+    }
+
+    .break{
+      background-color: grey;
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="jumbotron text-white" style="background-color: #3fa58e">
+    <h1>Laundry Service</h1><br>
+    <p style="font-size: 2em; text-align: center;background-color: black;border-radius: 1em;">Gents</p>
+  </div>
+</div>
+
+<div class="container-fluid">
+
+  <hr>
+
+  <h4>Shirt</h4>
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2 subitem">
+      <label for="shirt-dryclean">Dry Clean</label><br>
+      <input type="checkbox" name="shirt-dryclean">
+    </div>
+    <div class="p-2">
+      <label for="shirt-washing">Washing</label><br>
+      <input type="checkbox" name="shirt-washing">
+    </div>
+    <div class="p-2">
+      <label for="shirt-ironing">Ironing</label><br>
+      <input type="checkbox" name="shirt-ironing">
+    </div>
+    <div class="p-2">
+      <label for="shirt-count">Count</label><br>
+      <input type="number" name="shirt-count" min="0" max="99">
+    </div>
+  </div>
+
+  <hr>
+
+  <h4>Kurtha</h4>
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2 subitem">
+      <label for="kurtha-dryclean">Dry Clean</label><br>
+      <input type="checkbox" name="kurtha-dryclean">
+    </div>
+    <div class="p-2">
+      <label for="kurtha-washing">Washing</label><br>
+      <input type="checkbox" name="kurtha-washing">
+    </div>
+    <div class="p-2">
+      <label for="kurtha-ironing">Ironing</label><br>
+      <input type="checkbox" name="kurtha-ironing">
+    </div>
+    <div class="p-2">
+      <label for="kurtha-count">Count</label><br>
+      <input type="number" name="kurtha-count" min="0" max="99">
+    </div>
+  </div>
+
+  <hr>
+
+  <h4>Jacket</h4>
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2 subitem">
+      <label for="jacket-dryclean">Dry Clean</label><br>
+      <input type="checkbox" name="-dry">
+    </div>
+    <div class="p-2">
+      <label for="jacket-washing">Washing</label><br>
+      <input type="checkbox" name="jacket-washing">
+    </div>
+    <div class="p-2">
+      <label for="jacket-ironing">Ironing</label><br>
+      <input type="checkbox" name="jacket-ironing">
+    </div>
+    <div class="p-2">
+      <label for="jacket-count">Count</label><br>
+      <input type="number" name="jacket-count" min="0" max="99">
+    </div>
+  </div>
+
+  <hr>
+
+  <h4>Over Coat</h4>
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2 subitem">
+      <label for="overcoat-dry">Dry Clean</label><br>
+      <input type="checkbox" name="overcoat-dry">
+    </div>
+    <div class="p-2">
+      <label for="overcoat-washing">Washing</label><br>
+      <input type="checkbox" name="overcoat-washing">
+    </div>
+    <div class="p-2">
+      <label for="overcoat-ironing">Ironing</label><br>
+      <input type="checkbox" name="overcoat-ironing">
+    </div>
+    <div class="p-2">
+      <label for="overcoat-count">Count</label><br>
+      <input type="number" name="overcoat-count" min="0" max="99">
+    </div>
+  </div>
+
+  <a href="" style="text-decoration:none">
+    <div class="container">
+      <div class="jumbotron text-white" style="background-color: #3fa58e;">
+        <h1>Place Your Request</h1>
+      </div>    
+    </div>
+  </a>
+  <!-- <div class="d-flex flex-row">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+  </div> -->
+
+</div>
+
+</body>
+</html>

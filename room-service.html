@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Room Service</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    h1 {
+      text-align: center;
+    }
+    item{
+      height: 5em;
+      margin: 2em;
+    }
+    check{
+      display: block;
+      text-align: center;
+      justify-content: safe center;
+      margin-left: 1em;
+    }
+    subitem{
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+    }
+
+    .break{
+      background-color: grey;
+      width: 100%;
+    }
+
+
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    input:checked + .slider {
+      background-color: #3fa58e;
+    }
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    .slider.round {
+      border-radius: 34px;
+    }
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    .btn{
+      border-radius: 2em;
+      background-color: #3fa58e;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="jumbotron text-white" style="background-color: #3fa58e">
+    <h1>Room Service</h1>
+  </div>
+</div>
+
+<div class="container-fluid clothes">
+
+  <hr>
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2">
+      <h4>Do Not Disturb</h4>
+    </div>
+    <div class="p-2">
+      <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2">
+      <h4>Wake-up Call<h4>
+    </div>
+    <div class="p-2">
+      <label for="wake-up-call"></label>
+      <input type="time" id="appt" name="wake-up-call">
+    </div>
+    <div class="p-2">
+      <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2 subitem">
+      <h4>Clean My Room</h4>
+    </div>
+    <div class="p-2">
+      <label for="clean-my-room"></label>
+      <input type="button" name="clean-my-room" value="Request" class="btn btn-lg text-white">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2 subitem">
+      <h4>Send Room Attender</h4>
+    </div>
+    <div class="p-2">
+      <label for="send-room-attender"></label>
+      <input type="button" name="send-room-attender" value="Request" class="btn btn-lg text-white">
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2 subitem">
+      <h4>Change of Room</h4>
+    </div>
+    <div class="p-2">
+      <label for="change-of-room"></label>
+      <input type="button" name="change-of-room" value="Request" class="btn btn-lg text-white">
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2 subitem">
+      <h4>Need Maintence</h4>
+    </div>
+    <div class="p-2">
+      <label for="need-maintence"></label>
+      <input type="button" name="need-maintence" value="Request" class="btn btn-lg text-white">
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2 subitem">
+      <h4>TurnDown Service</h4>
+    </div>
+    <div class="p-2">
+      <label for="turndown-service"></label>
+      <input type="button" name="turndown-service" value="Request" class="btn btn-lg text-white">
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="d-flex flex-row mb-3 justify-content-between">
+    <div class="p-2 subitem">
+      <h4>SOS</h4>
+    </div>
+    <div class="p-2">
+      <label for="sos"></label>
+      <input type="button" name="sos" value="Request" class="btn btn-lg text-white">
+    </div>
+  </div>
+
+  <hr>
+</div>
+
+</body>
+</html>

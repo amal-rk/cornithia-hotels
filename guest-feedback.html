@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Guest Feedback</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    h1 {
+      text-align: center;
+    }
+    item {
+      height: 5em;
+      margin: 2em;
+    }
+    check {
+      display: block;
+      text-align: center;
+      justify-content: safe center;
+      margin-left: 1em;
+    }
+    subitem {
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+    }
+
+    .break {
+      background-color: grey;
+      width: 100%;
+    }
+
+    label {
+      font-size: 1.25em;
+      color: grey;
+    }
+
+
+    body {
+      margin      : 0;
+      padding     : 1.5em;
+      font-family : sans-serif;
+      line-height : 1.5;
+    }
+
+    p {
+      margin  : 0 0 1.5em;
+      padding : 0;
+    }
+
+    a {
+      color           : #9c3;
+      text-decoration : none;
+    }
+
+    .starRating:not(old){
+      display        : inline-block;
+      width          : 7.5em;
+      height         : 1.5em;
+      overflow       : hidden;
+      vertical-align : bottom;
+    }
+
+    .starRating:not(old) > input{
+      margin-right : -100%;
+      opacity      : 0;
+    }
+
+    .starRating:not(old) > label{
+      display         : block;
+      float           : right;
+      position        : relative;
+      background      : url('star-off.svg');
+      background-size : contain;
+    }
+
+    .starRating:not(old) > label:before{
+      content         : '';
+      display         : block;
+      width           : 1.5em;
+      height          : 1.5em;
+      background      : url('star-on.svg');
+      background-size : contain;
+      opacity         : 0;
+      transition      : opacity 0.2s linear;
+    }
+
+    .starRating:not(old) > label:hover:before,
+    .starRating:not(old) > label:hover ~ label:before,
+    .starRating:not(:hover) > :checked ~ label:before{
+      opacity : 1;
+    }
+
+    input[type=text], input[type=email]{
+      border: none;
+      border-bottom: 2px solid red;
+      width: 100%;
+    }
+
+    .submit{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="jumbotron text-white" style="background-color: #3fa58e">
+    <h1>Guest Feedback</h1>
+  </div>
+</div>
+
+<div class="container-fluid">
+
+  <h4>Guest Service Staff</h4>
+  <div class="d-flex flex-row justify-content-between">
+    <div class="pt-3 subitem">
+      <label for="shirt-dryclean">Reservation Process</label><br>
+    </div>
+    <div class="">
+      <span class="starRating">
+        <input id="rating6" type="radio" name="rating" value="6">
+        <label for="rating6">6</label>
+        <input id="rating5" type="radio" name="rating" value="5">
+        <label for="rating5">5</label>
+        <input id="rating4" type="radio" name="rating" value="4">
+        <label for="rating4">4</label>
+        <input id="rating3" type="radio" name="rating" value="3" checked>
+        <label for="rating3">3</label>
+        <input id="rating2" type="radio" name="rating" value="2">
+        <label for="rating2">2</label>
+        <input id="rating1" type="radio" name="rating" value="1">
+        <label for="rating1">1</label>
+      </span>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-flex flex-row justify-content-between">
+    <div class="pt-3 subitem">
+      <label for="shirt-dryclean">Reception staff attitude</label><br>
+    </div>
+    <div class="">
+      <span class="starRating">
+        <input id="rating6" type="radio" name="rating" value="6">
+        <label for="rating6">6</label>
+        <input id="rating5" type="radio" name="rating" value="5">
+        <label for="rating5">5</label>
+        <input id="rating4" type="radio" name="rating" value="4">
+        <label for="rating4">4</label>
+        <input id="rating3" type="radio" name="rating" value="3" checked>
+        <label for="rating3">3</label>
+        <input id="rating2" type="radio" name="rating" value="2">
+        <label for="rating2">2</label>
+        <input id="rating1" type="radio" name="rating" value="1">
+        <label for="rating1">1</label>
+      </span>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-flex flex-row justify-content-between">
+    <div class="pt-3 subitem">
+      <label for="shirt-dryclean">Quality concierge service</label><br>
+    </div>
+    <div class="">
+      <span class="starRating">
+        <input id="rating6" type="radio" name="rating" value="6">
+        <label for="rating6">6</label>
+        <input id="rating5" type="radio" name="rating" value="5">
+        <label for="rating5">5</label>
+        <input id="rating4" type="radio" name="rating" value="4">
+        <label for="rating4">4</label>
+        <input id="rating3" type="radio" name="rating" value="3" checked>
+        <label for="rating3">3</label>
+        <input id="rating2" type="radio" name="rating" value="2">
+        <label for="rating2">2</label>
+        <input id="rating1" type="radio" name="rating" value="1">
+        <label for="rating1">1</label>
+      </span>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-flex flex-row justify-content-between">
+    <div class="pt-3 subitem">
+      <label for="shirt-dryclean">Quality Room Service</label><br>
+    </div>
+    <div class="">
+      <span class="starRating">
+        <input id="rating6" type="radio" name="rating" value="6">
+        <label for="rating6">6</label>
+        <input id="rating5" type="radio" name="rating" value="5">
+        <label for="rating5">5</label>
+        <input id="rating4" type="radio" name="rating" value="4">
+        <label for="rating4">4</label>
+        <input id="rating3" type="radio" name="rating" value="3" checked>
+        <label for="rating3">3</label>
+        <input id="rating2" type="radio" name="rating" value="2">
+        <label for="rating2">2</label>
+        <input id="rating1" type="radio" name="rating" value="1">
+        <label for="rating1">1</label>
+      </span>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-flex flex-row justify-content-between">
+    <div class="pt-3 subitem">
+      <label for="shirt-dryclean">Quality of room service</label><br>
+    </div>
+    <div class="">
+      <span class="starRating">
+        <input id="rating6" type="radio" name="rating" value="6">
+        <label for="rating6">6</label>
+        <input id="rating5" type="radio" name="rating" value="5">
+        <label for="rating5">5</label>
+        <input id="rating4" type="radio" name="rating" value="4">
+        <label for="rating4">4</label>
+        <input id="rating3" type="radio" name="rating" value="3" checked>
+        <label for="rating3">3</label>
+        <input id="rating2" type="radio" name="rating" value="2">
+        <label for="rating2">2</label>
+        <input id="rating1" type="radio" name="rating" value="1">
+        <label for="rating1">1</label>
+      </span>
+    </div>
+  </div>
+
+  <br><br>
+
+  <h4>Room Facility</h4>
+  <div class="d-flex flex-row justify-content-between">
+    <div class="pt-3 subitem">
+      <label for="shirt-dryclean">Free Broadband Service</label><br>
+    </div>
+    <div class="">
+      <span class="starRating">
+        <input id="rating6" type="radio" name="rating" value="6">
+        <label for="rating6">6</label>
+        <input id="rating5" type="radio" name="rating" value="5">
+        <label for="rating5">5</label>
+        <input id="rating4" type="radio" name="rating" value="4">
+        <label for="rating4">4</label>
+        <input id="rating3" type="radio" name="rating" value="3" checked>
+        <label for="rating3">3</label>
+        <input id="rating2" type="radio" name="rating" value="2">
+        <label for="rating2">2</label>
+        <input id="rating1" type="radio" name="rating" value="1">
+        <label for="rating1">1</label>
+      </span>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-flex flex-row justify-content-between">
+    <div class="pt-3 subitem">
+      <label for="shirt-dryclean">Interactive TV Service</label><br>
+    </div>
+    <div class="">
+      <span class="starRating">
+        <input id="rating6" type="radio" name="rating" value="6">
+        <label for="rating6">6</label>
+        <input id="rating5" type="radio" name="rating" value="5">
+        <label for="rating5">5</label>
+        <input id="rating4" type="radio" name="rating" value="4">
+        <label for="rating4">4</label>
+        <input id="rating3" type="radio" name="rating" value="3" checked>
+        <label for="rating3">3</label>
+        <input id="rating2" type="radio" name="rating" value="2">
+        <label for="rating2">2</label>
+        <input id="rating1" type="radio" name="rating" value="1">
+        <label for="rating1">1</label>
+      </span>
+    </div>
+  </div>
+
+  <br><br>
+
+
+  <input type="text" name="name" placeholder="Name">
+  <br><br>
+  <input type="email" name="email" placeholder="E-mail">
+  <br><br>
+  <input type="text" name="mobile" placeholder="Mobile">
+
+  <br><br>
+
+  <a href="" style="text-decoration:none">
+    <div class="container">
+      <div class="jumbotron text-white" style="background-color: #3fa58e;">
+        <h3 class="submit">Send</h3>
+      </div>    
+    </div>
+  </a>
+
+</div>
+
+</body>
+</html>
