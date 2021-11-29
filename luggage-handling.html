@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Room Amenities</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    h1 {
+      text-align: center;
+    }
+    item{
+      height: 5em;
+      margin: 2em;
+    }
+    check{
+      display: block;
+      text-align: center;
+      justify-content: safe center;
+      margin-left: 1em;
+    }
+    {
+      justify-content: center;
+      text-align: center;
+      justify-items: center;
+    }
+
+    .break{
+      background-color: grey;
+      width: 100%;
+    }
+
+
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    input:checked + .slider {
+      background-color: #3fa58e;
+    }
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    .slider.round {
+      border-radius: 34px;
+    }
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    .btn {
+      border-radius: 2em;
+      background-color: #3fa58e;
+    }
+
+    img {
+      height: 3em;
+      width: 3em;
+    }
+
+    h4 {
+      justify-content: center;
+      text-align: center;
+      justify-self: center;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="jumbotron text-white" style="background-color: #3fa58e">
+    <h1>Room Amenities</h1>
+  </div>
+</div>
+
+<div class="container-fluid">
+
+  <hr>
+  
+  <div class="d-flex flex-row mb-3 justify-content-around">
+    <div class="p-2">
+      <label for="room-to-reception">
+        <h4>Room to Reception</h4>
+      </label>
+    </div>
+    <div class="p-2">
+      <input type="checkbox" name="room-to-reception">
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="d-flex flex-row mb-3 justify-content-around">
+    <div class="p-2">
+      <label for="reception-to-room">
+        <h4>Reception to Room</h4>
+      </label>
+    </div>
+    <div class="p-2">
+      <input type="checkbox" name="reception-to-room">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-flex flex-row mb-3 justify-content-around">
+    <div class="p-2">
+      <label for="bed">
+        <h4>Reception to Vehicle</h4>
+      </label>
+    </div>
+    <div class="p-2">
+      <input type="checkbox" name="reception-to-vehicle">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-flex flex-row mb-3 justify-content-around">
+    <div class="p-2">
+      <label for="mirror">
+        <h4>Vehicle To Reception</h4>
+      </label>
+    </div>
+    <div class="p-2">
+     <input type="checkbox" name="vehicle-to-reception">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="d-flex flex-row mb-3 justify-content-around">
+    <div class="p-2">
+      <label for="mirror">
+        <h4>Cloakroom Handling</h4>
+      </label>
+    </div>
+    <div class="p-2">
+      <input type="checkbox" name="cloakroom-handling">
+    </div>
+  </div>
+
+  <hr>
+  
+</div>
+
+</body>
+</html>
